@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="285" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="285" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bN-TT-uIN">
+                        <rect key="frame" x="0.0" y="0.0" width="285" height="205"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-tO-RaG">
+                        <rect key="frame" x="30" y="25" width="39.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXu-zq-GSf">
+                        <rect key="frame" x="30" y="50.5" width="35.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Thanksgiving Deals" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syw-wB-8L8">
+                        <rect key="frame" x="30" y="76" width="148" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yj-P3-ZJ5">
+                        <rect key="frame" x="30" y="152" width="94" height="33"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="booknowicon" translatesAutoresizingMaskIntoConstraints="NO" id="jg8-5X-3sl">
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="33"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1p-Ta-82G">
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="33"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="0M7-Nk-q6v"/>
+                            <constraint firstAttribute="bottom" secondItem="a1p-Ta-82G" secondAttribute="bottom" id="1W8-HL-Ac9"/>
+                            <constraint firstAttribute="trailing" secondItem="a1p-Ta-82G" secondAttribute="trailing" id="Iwf-NQ-oav"/>
+                            <constraint firstItem="a1p-Ta-82G" firstAttribute="leading" secondItem="0Yj-P3-ZJ5" secondAttribute="leading" id="Md2-5K-RDu"/>
+                            <constraint firstItem="jg8-5X-3sl" firstAttribute="leading" secondItem="0Yj-P3-ZJ5" secondAttribute="leading" id="fTx-uk-O9A"/>
+                            <constraint firstAttribute="height" constant="33" id="gGp-BM-RhJ"/>
+                            <constraint firstAttribute="bottom" secondItem="jg8-5X-3sl" secondAttribute="bottom" id="hRN-0l-oTe"/>
+                            <constraint firstItem="jg8-5X-3sl" firstAttribute="top" secondItem="0Yj-P3-ZJ5" secondAttribute="top" id="lgT-Zf-kni"/>
+                            <constraint firstAttribute="trailing" secondItem="jg8-5X-3sl" secondAttribute="trailing" id="peZ-P1-dC1"/>
+                            <constraint firstItem="a1p-Ta-82G" firstAttribute="top" secondItem="0Yj-P3-ZJ5" secondAttribute="top" id="stk-W1-0c7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNq-Po-G2u">
+                        <rect key="frame" x="65.5" y="50.5" width="31.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Syw-wB-8L8" secondAttribute="trailing" constant="100" id="Bmn-XP-WYz"/>
+                <constraint firstItem="0Yj-P3-ZJ5" firstAttribute="leading" secondItem="Syw-wB-8L8" secondAttribute="leading" id="CBM-dG-kRv"/>
+                <constraint firstAttribute="bottom" secondItem="8bN-TT-uIN" secondAttribute="bottom" id="E76-9R-5Sc"/>
+                <constraint firstItem="8bN-TT-uIN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EhY-ym-b9h"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nNq-Po-G2u" secondAttribute="trailing" constant="100" id="H3a-mD-fin"/>
+                <constraint firstItem="8bN-TT-uIN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JQI-rw-5l5"/>
+                <constraint firstItem="R7k-tO-RaG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="MLw-zx-fEk"/>
+                <constraint firstItem="MXu-zq-GSf" firstAttribute="top" secondItem="R7k-tO-RaG" secondAttribute="bottom" constant="5" id="OwT-f3-EKv"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R7k-tO-RaG" secondAttribute="trailing" constant="100" id="XM9-Vy-hIm"/>
+                <constraint firstItem="MXu-zq-GSf" firstAttribute="leading" secondItem="R7k-tO-RaG" secondAttribute="leading" id="ZXa-kT-bK5"/>
+                <constraint firstAttribute="trailing" secondItem="8bN-TT-uIN" secondAttribute="trailing" id="aKe-Uw-rZj"/>
+                <constraint firstItem="R7k-tO-RaG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="iVM-T1-3Sy"/>
+                <constraint firstAttribute="bottom" secondItem="0Yj-P3-ZJ5" secondAttribute="bottom" constant="20" id="lfG-Y2-Q27"/>
+                <constraint firstItem="Syw-wB-8L8" firstAttribute="leading" secondItem="MXu-zq-GSf" secondAttribute="leading" id="lhk-Vr-nWy"/>
+                <constraint firstItem="0Yj-P3-ZJ5" firstAttribute="top" relation="lessThanOrEqual" secondItem="Syw-wB-8L8" secondAttribute="bottom" constant="35" id="p6B-en-lX5"/>
+                <constraint firstItem="Syw-wB-8L8" firstAttribute="top" secondItem="MXu-zq-GSf" secondAttribute="bottom" constant="5" id="s34-fI-NfB"/>
+                <constraint firstItem="nNq-Po-G2u" firstAttribute="leading" secondItem="MXu-zq-GSf" secondAttribute="trailing" id="sPc-ec-ZL3"/>
+                <constraint firstItem="nNq-Po-G2u" firstAttribute="centerY" secondItem="MXu-zq-GSf" secondAttribute="centerY" id="v4z-OX-aNg"/>
+            </constraints>
+            <size key="customSize" width="285" height="205"/>
+            <connections>
+                <outlet property="bannerImageView" destination="8bN-TT-uIN" id="O6l-Pl-wrm"/>
+                <outlet property="bookNowButtonView" destination="0Yj-P3-ZJ5" id="MTh-1g-Ygk"/>
+                <outlet property="offLabel" destination="nNq-Po-G2u" id="aIK-XK-6Da"/>
+                <outlet property="offerLabel" destination="R7k-tO-RaG" id="vdh-hy-Wso"/>
+                <outlet property="percentLabel" destination="MXu-zq-GSf" id="eWf-sV-IWV"/>
+                <outlet property="thanksLable" destination="Syw-wB-8L8" id="2pJ-Rl-6c2"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="booknowicon" width="94" height="33"/>
+    </resources>
+</document>

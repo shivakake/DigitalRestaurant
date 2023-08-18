@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscountsViewController" customModule="Restaurant" customModuleProvider="target">
+            <connections>
+                <outlet property="applyDiscountButton" destination="v9v-na-RGu" id="lGR-5e-PsQ"/>
+                <outlet property="discountsCollectionView" destination="cr6-EB-Dxo" id="x7m-Yn-6yX"/>
+                <outlet property="discountsCollectionViewHeightConstraint" destination="HJg-gM-kPe" id="cRL-jq-gbl"/>
+                <outlet property="getDiscountTitleLabel" destination="aRC-NV-8es" id="Fh9-rt-des"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kB-jW-3Gp">
+                    <rect key="frame" x="30" y="54" width="354" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-zb-Epd">
+                            <rect key="frame" x="0.0" y="19" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Osv-pZ-lnd"/>
+                                <constraint firstAttribute="width" secondItem="kMO-zb-Epd" secondAttribute="height" multiplier="1:1" id="hYu-ay-5Fh"/>
+                            </constraints>
+                            <color key="tintColor" red="0.28627450980000002" green="0.54901960780000003" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="c4m-0l-gB0"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hKm-gy-xU0">
+                            <rect key="frame" x="123" y="17.5" width="108" height="25.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Discounts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRC-NV-8es">
+                                    <rect key="frame" x="0.0" y="0.0" width="108" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="KX5-Ug-E2x">
+                                    <rect key="frame" x="0.0" y="23.5" width="108" height="2"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="KX5-Ug-E2x" firstAttribute="leading" secondItem="aRC-NV-8es" secondAttribute="leading" id="0C9-oN-0Y3"/>
+                                <constraint firstItem="KX5-Ug-E2x" firstAttribute="trailing" secondItem="aRC-NV-8es" secondAttribute="trailing" id="YT5-mX-n7x"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca6-gR-ICP">
+                            <rect key="frame" x="322" y="19" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ca6-gR-ICP" secondAttribute="height" multiplier="1:1" id="8Ja-pA-dCr"/>
+                                <constraint firstAttribute="height" constant="22" id="bxT-oG-Gj2"/>
+                            </constraints>
+                            <color key="tintColor" red="0.28627450980000002" green="0.54901960780000003" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="notification"/>
+                            <connections>
+                                <action selector="notificationsButtonTapped:" destination="-1" eventType="touchUpInside" id="hRU-1v-Vsr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="kMO-zb-Epd" firstAttribute="centerY" secondItem="2kB-jW-3Gp" secondAttribute="centerY" id="2ec-Pd-9jP"/>
+                        <constraint firstItem="ca6-gR-ICP" firstAttribute="centerY" secondItem="2kB-jW-3Gp" secondAttribute="centerY" id="7rn-wj-Hzs"/>
+                        <constraint firstAttribute="trailing" secondItem="ca6-gR-ICP" secondAttribute="trailing" constant="10" id="Ivz-yt-zHo"/>
+                        <constraint firstItem="hKm-gy-xU0" firstAttribute="centerX" secondItem="2kB-jW-3Gp" secondAttribute="centerX" id="KcD-Li-58G"/>
+                        <constraint firstAttribute="height" constant="60" id="U6R-yV-64Y"/>
+                        <constraint firstItem="kMO-zb-Epd" firstAttribute="leading" secondItem="2kB-jW-3Gp" secondAttribute="leading" id="WVf-4h-I9S"/>
+                        <constraint firstItem="hKm-gy-xU0" firstAttribute="centerY" secondItem="2kB-jW-3Gp" secondAttribute="centerY" id="bfg-S6-lz1"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ra-iw-4QP">
+                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHz-B9-KA5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cr6-EB-Dxo">
+                                    <rect key="frame" x="30" y="10" width="354" height="600"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="600" id="HJg-gM-kPe"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ufu-NM-cZC">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9v-na-RGu">
+                                    <rect key="frame" x="50" y="710" width="314" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="9OP-SR-VEc"/>
+                                    </constraints>
+                                    <state key="normal" title="Apply Discount"/>
+                                    <connections>
+                                        <action selector="applyDiscountButtonTapped:" destination="-1" eventType="touchUpInside" id="gje-c5-r2l"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="v9v-na-RGu" secondAttribute="trailing" constant="50" id="Gqe-sv-uDD"/>
+                                <constraint firstAttribute="bottom" secondItem="v9v-na-RGu" secondAttribute="bottom" constant="40" id="J9g-u1-l9d"/>
+                                <constraint firstAttribute="trailing" secondItem="cr6-EB-Dxo" secondAttribute="trailing" constant="30" id="Mom-Dl-Bjx"/>
+                                <constraint firstItem="cr6-EB-Dxo" firstAttribute="leading" secondItem="BHz-B9-KA5" secondAttribute="leading" constant="30" id="e2N-vI-XA6"/>
+                                <constraint firstItem="v9v-na-RGu" firstAttribute="leading" secondItem="BHz-B9-KA5" secondAttribute="leading" constant="50" id="kcn-3y-Dfw"/>
+                                <constraint firstItem="v9v-na-RGu" firstAttribute="top" secondItem="cr6-EB-Dxo" secondAttribute="bottom" constant="100" id="wPX-T2-N6W"/>
+                                <constraint firstItem="cr6-EB-Dxo" firstAttribute="top" secondItem="BHz-B9-KA5" secondAttribute="top" constant="10" id="xYX-kC-YKM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BHz-B9-KA5" secondAttribute="trailing" id="55x-z8-I1v"/>
+                        <constraint firstItem="BHz-B9-KA5" firstAttribute="leading" secondItem="2ra-iw-4QP" secondAttribute="leading" id="EhY-5v-KHa"/>
+                        <constraint firstItem="BHz-B9-KA5" firstAttribute="top" secondItem="2ra-iw-4QP" secondAttribute="top" id="qUO-Xi-MO9"/>
+                        <constraint firstAttribute="bottom" secondItem="BHz-B9-KA5" secondAttribute="bottom" id="yV8-wi-0Rl"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2kB-jW-3Gp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ClB-oW-zuS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2kB-jW-3Gp" secondAttribute="trailing" constant="30" id="Cqh-Ix-2tP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2ra-iw-4QP" secondAttribute="trailing" id="DA2-NO-lN4"/>
+                <constraint firstItem="2ra-iw-4QP" firstAttribute="top" secondItem="2kB-jW-3Gp" secondAttribute="bottom" id="KoT-EP-LAE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2ra-iw-4QP" secondAttribute="bottom" id="MjY-HT-KVo"/>
+                <constraint firstItem="2kB-jW-3Gp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="RXe-tr-fp2"/>
+                <constraint firstItem="BHz-B9-KA5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="aug-uQ-Wbr"/>
+                <constraint firstItem="2ra-iw-4QP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vAe-JC-e0q"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Line" width="79" height="2"/>
+        <image name="back" width="9" height="15"/>
+        <image name="notification" width="17" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
